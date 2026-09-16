@@ -1,116 +1,87 @@
 # E-commerce Sales Analysis
 
-## 📊 Project Overview
+## About the Project
 
-An end-to-end **E-commerce Sales Analysis project** using Python, MySQL, Excel, and Power BI to clean, analyze, and visualize order-level sales data.
+This project is based on an e-commerce sales dataset containing customer, order, product, payment, sales, and profit information.
 
-The project covers data preprocessing, SQL-based business analysis, KPI development, and interactive Power BI dashboard creation to understand sales, profit, customer, product, and order performance.
+I used Python, MySQL, Excel, and Power BI to clean the data, analyze sales performance, and create a dashboard that makes the results easier to understand.
 
-## 🛠️ Tools & Technologies
+## Tools Used
 
-* Python
-* Pandas
+* Python (Pandas)
 * MySQL
+* Excel
 * Power BI
 * DAX
-* Excel
 
-## 📁 Dataset
+## What I Did
 
-The dataset contains e-commerce order information with fields including:
+### Data Cleaning with Python
 
-* `Order_ID`
-* `Order_Date`
-* `Customer_Name`
-* `Email`
-* `Phone`
-* `City`
-* `State`
-* `Product`
-* `Category`
-* `Qty`
-* `Unit_Price`
-* `Discount`
-* `Payment_Mode`
-* `Order_Status`
-* `Delivery_Date`
-* `Sales`
-* `Net_Amount`
-* `Profit`
-* `Month`
-* `Year`
-* `Weekday`
+I used Pandas to prepare the dataset for analysis.
 
-## 🔄 Project Workflow
+Some of the main cleaning steps were:
 
-### 1. Data Cleaning & Preprocessing – Python
+* Handled missing values
+* Converted date columns into the correct format
+* Filled missing discount values
+* Handled missing phone and delivery date values
+* Calculated the `Net_Amount`
+* Prepared the cleaned data for further analysis
 
-Used Python and Pandas to clean and prepare the e-commerce order data.
+### SQL Analysis
 
-Key activities included:
+After cleaning the data, I loaded it into MySQL and wrote queries to look at different parts of the business.
 
-* Handling missing values
-* Cleaning customer and transaction data
-* Converting date columns
-* Handling missing phone and delivery information
-* Calculating `Net_Amount`
-* Preparing the cleaned data for SQL analysis and Power BI
+The analysis includes:
 
-### 2. Data Analysis – MySQL
-
-Loaded the cleaned e-commerce data into MySQL and performed SQL queries for business analysis.
-
-Analysis included:
-
-* Total sales
-* Sales by city
-* Sales by state
-* Product performance
-* Category performance
-* Profit analysis
-* Order status analysis
-* Payment mode analysis
-* Customer-level analysis
+* Total sales and profit
+* Sales by city and state
+* Product and category performance
 * Monthly sales trends
+* Order status
+* Payment methods
+* Customer-level sales
 
-### 3. Dashboard Development – Power BI
+### Power BI Dashboard
 
-Created an interactive Power BI dashboard to analyze e-commerce performance.
+I used Power BI to turn the analysis into an interactive dashboard.
 
-### Key KPIs
+The dashboard covers:
 
-* **Total Sales**
-* **Total Orders**
-* **Total Profit**
-* **Average Order Value**
-* **Sales by City**
-* **Sales by State**
-* **Sales by Category**
-* **Product Performance**
-* **Order Status**
-* **Payment Mode**
+* Total Sales
+* Total Orders
+* Total Profit
+* Average Order Value
+* Sales by City
+* Sales by State
+* Category and Product Performance
+* Order Status
+* Payment Mode
 
-## 💡 Business Insights
+## Dashboard
 
-The analysis helps identify high-performing locations, products, and categories while providing visibility into sales, profitability, customer behavior, and order patterns.
+![E-commerce Sales Dashboard](./1.png)
 
-These insights can support business decisions related to sales performance, product planning, customer demand, and profitability.
+## Dataset Columns
 
-## 📷 Dashboard
+The dataset contains fields such as:
 
-![E-commerce Sales Dashboard](./images/1.png)
+`Order_ID`, `Order_Date`, `Customer_Name`, `Email`, `Phone`, `City`, `State`, `Product`, `Category`, `Qty`, `Unit_Price`, `Discount`, `Payment_Mode`, `Order_Status`, `Delivery_Date`, `Sales`, `Net_Amount`, `Profit`, `Month`, `Year`, and `Weekday`.
 
-## 📂 Project Files
+## Project Files
 
-| File                           | Description                                     |
-| ------------------------------ | ----------------------------------------------- |
-| `ecommerce.ipynb`              | Python data cleaning and preprocessing notebook |
-| `ecommerce_sales_analysis.sql` | MySQL analysis queries                          |
-| `ecommerce.pbix`               | Power BI dashboard                              |
-| `clean ecommerce.xlsx`         | Cleaned e-commerce dataset                      |
-| `images/1.png`                 | Power BI dashboard screenshot                   |
+* `ecommerce.ipynb` – Python data cleaning
+* `ecommerce_sales_analysis.sql` – SQL queries
+* `ecommerce.pbix` – Power BI dashboard
+* `clean ecommerce.xlsx` – Cleaned dataset
+* `1.png` – Dashboard screenshot
 
-## 👨‍💻 Author
+## Key Takeaway
+
+This project helped me practice the complete data analysis process, starting with data cleaning and SQL analysis and ending with an interactive Power BI dashboard.
+
+## Author
 
 **Prince Bhowra**
 
